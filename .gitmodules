@@ -1,0 +1,12 @@
+[submodule "external/libcint"]
+	path = external/libcint
+	url = https://github.com/sunqm/libcint
+[submodule "external/libid"]
+	path = external/libid
+	url = https://github.com/fastalgorithms/libid
+[submodule "external/dmk"]
+	path = external/dmk
+	url = https://github.com/flatironinstitute/dmk.git
+[submodule "external/treefun"]
+	path = external/treefun
+	url = https://github.com/haiszhu/treefun.git

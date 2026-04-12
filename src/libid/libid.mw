@@ -1,0 +1,10 @@
+@function [SK, RD, T] = iddr_aid_mwrap_mex(A, krank, SK, RD, T)
+[m, n] = size(A);
+k = min([floor(krank), m, n]);
+k = max(k, 1);
+if k >= n
+  error('iddr_aid_mwrap_mex requires 1 <= krank < size(A,2).');
+end
+nrd = n - k;
+# FORTRAN iddr_aid_mwrap(int[1] m, int[1] n, double[m,n] A, int[1] k, inout int[k] SK, inout int[nrd] RD, inout double[k,nrd] T);
+end

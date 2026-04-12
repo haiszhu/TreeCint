@@ -1,0 +1,6 @@
+@function [pot] = bdmk_eval_mex(nd, ndim, eps, ikernel, beta, ipoly, norder, npbox, nboxes, nlevels, ltree, itree, iptr, centers, boxsize, fvals, pot)
+nboxsize = numel(boxsize);
+nfvals = numel(fvals);
+npot = numel(pot);
+# FORTRAN bdmk_eval(int[1] nd, int[1] ndim, double[1] eps, int[1] ikernel, double[1] beta, int[1] ipoly, int[1] norder, int[1] npbox, int[1] nboxes, int[1] nlevels, int[1] ltree, int[ltree] itree, int[8] iptr, double[ndim,nboxes] centers, double[nboxsize] boxsize, double[nfvals] fvals, inout double[npot] pot);
+end

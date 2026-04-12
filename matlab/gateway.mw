@@ -1,0 +1,29 @@
+@function [ao] = GTOval_sph_generic_mwrap_mex( ngrids, shls_slice, ao_loc, ao, coord, non0table, atm, natm, bas, nbas, env)
+naoloc = shls_slice(2) - shls_slice(1) + 1;
+nao = ao_loc(shls_slice(2)+1) - ao_loc(shls_slice(1)+1);
+ntmpao = ngrids*nao;
+ndim = 3;
+ndimngrids = numel(coord);
+nnon0tab = numel(non0table);
+ATM_SLOTS = 6;
+BAS_SLOTS = 8;
+ntmpatm = natm*ATM_SLOTS;
+ntmpbas = nbas*BAS_SLOTS;
+nenv = numel(env);
+# GTOval_sph_generic_mwrap(int[1] ngrids, int[2] shls_slice, int[naoloc] ao_loc, inout double[ntmpao] ao, double[ndimngrids] coord, int[nnon0tab] non0table, int[ntmpatm] atm, int[1] natm, int[ntmpbas] bas, int[1] nbas, double[nenv] env);
+end
+
+@function [aoi] = GTOival_sph_generic_mwrap_mex(i, ngrids, shls_slice, ao_loc, aoi, coord, non0table, atm, natm, bas, nbas, env)
+naoloc = shls_slice(2) - shls_slice(1) + 1;
+nao = ao_loc(shls_slice(2)+1) - ao_loc(shls_slice(1)+1);
+ntmpao = ngrids*nao;
+ndim = 3;
+ndimngrids = numel(coord);
+nnon0tab = numel(non0table);
+ATM_SLOTS = 6;
+BAS_SLOTS = 8;
+ntmpatm = natm*ATM_SLOTS;
+ntmpbas = nbas*BAS_SLOTS;
+nenv = numel(env);
+# GTOival_sph_generic_mwrap(int[1] i, int[1] ngrids, int[2] shls_slice, int[naoloc] ao_loc, inout double[ngrids] aoi, double[ndimngrids] coord, int[nnon0tab] non0table, int[ntmpatm] atm, int[1] natm, int[ntmpbas] bas, int[1] nbas, double[nenv] env);
+end
