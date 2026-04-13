@@ -12,7 +12,8 @@ being modified in `TreeCint-legacy` with support from Codex and Claude Code.
 The modernization introduces reproducible external dependencies and clearer build/integration
 boundaries, including:
 - `external/libcint` (GTO evaluation backend) - https://github.com/sunqm/libcint
-- `external/libid` (interpolative decomposition backend) - https://github.com/fastalgorithms/libid
+- `external/libid` (interpolative decomposition backend, legacy/default path) - https://github.com/fastalgorithms/libid
+- `external/coqui` (interpolative decomposition backend, planned replacement for `libid`) - https://github.com/AbInitioQHub/coqui
 - `external/dmk` (Box-DMK Coulomb kernel backend) - https://github.com/flatironinstitute/dmk
 - `external/treefun` (adaptive MATLAB octree representation) - https://github.com/haiszhu/treefun
 

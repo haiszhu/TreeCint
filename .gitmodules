@@ -10,3 +10,6 @@
 [submodule "external/treefun"]
 	path = external/treefun
 	url = https://github.com/haiszhu/treefun.git
+[submodule "external/coqui"]
+	path = external/coqui
+	url = https://github.com/AbInitioQHub/coqui
