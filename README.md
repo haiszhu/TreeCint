@@ -6,8 +6,13 @@ octree Coulomb solver (Box-DMK).
 
 ## Provenance
 
-This code path is originally derived from the libcint workflow in haiszhu/libcint, and is
-being modified in `TreeCint-legacy` with support from Codex and Claude Code.
+The original version of this code path lives in
+[`haiszhu/libcint`](https://github.com/haiszhu/libcint/tree/master), a fork and
+extension of the upstream
+[`sunqm/libcint`](https://github.com/sunqm/libcint) library.
+
+This repository modernizes that original workflow into a more reproducible
+MATLAB-based pipeline for ERI construction via ISDF and Box-DMK with support from Codex and Claude Code.
 
 The modernization introduces reproducible external dependencies and clearer build/integration
 boundaries, including:
